@@ -1,0 +1,4 @@
+baseURL = 'https://ZorAlf.github.io/Project-Notes/'
+languageCode = 'en-us'
+title = 'Project Notes'
+theme = 'PaperMod'
