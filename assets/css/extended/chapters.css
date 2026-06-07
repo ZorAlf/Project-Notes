@@ -1,0 +1,21 @@
+.chapter-list article,
+.first-entry,
+.post-entry {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 0 1rem 0 !important;
+}
+
+.post-description,
+.entry-content,
+.entry-footer {
+    display: none !important;
+}
+
+.post-entry .entry-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
