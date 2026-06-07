@@ -1,17 +1,30 @@
 body {
     font-family: 'Spectral', serif;
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 19px;
+    line-height: 1.85;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: 0.3px;
 }
 
+.post-title {
+    font-size: 2.3rem;
+}
+
 .post-content {
     max-width: 760px;
+}
+
+.post-content p {
+    margin-bottom: 1.4rem;
 }
 
 .post-content h2 {
@@ -26,27 +39,53 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .8rem;
 }
 
-.post-content p {
-    margin-bottom: 1.4rem;
+.post-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 6px;
 }
 
 blockquote {
     border-left: 3px solid var(--primary);
     padding-left: 1rem;
     font-style: italic;
-    opacity: .9;
+    opacity: 0.9;
 }
 
-/* .post-content img {
-    display: block;
-    margin: 2rem auto;
-    border-radius: 6px;
-    max-width: 100%;
-} */
+hr {
+    margin: 3rem 0;
+    opacity: 0.2;
+}
 
 .post-content a {
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+
+.list .post-entry,
+.list article,
+.list .first-entry {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.list .entry-content,
+.list .post-description,
+.list .entry-footer {
+    display: none !important;
+}
+
+.list .entry-header h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.list .entry-header h2::before {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -55,23 +94,19 @@ blockquote {
         font-size: 16px;
     }
 
-    .post-content {
-        max-width: 100%;
-    }
-
     .post-title {
         font-size: 2rem;
     }
 
-    .post-content h2 {
-        font-size: 1.6rem;
+    .post-content {
+        max-width: 100%;
     }
-}
 
-.chapter-list a {
-    text-decoration: none;
-}
+    .post-content h2 {
+        font-size: 1.7rem;
+    }
 
-.chapter-list p {
-    margin-bottom: .8rem;
+    .post-content h3 {
+        font-size: 1.4rem;
+    }
 }
