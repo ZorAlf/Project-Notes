@@ -16,5 +16,3 @@ What started as simple handwritten notes has slowly developed into a structured 
 This project is both a hobby and a personal experiment, an effort to build a system for learning, thinking, and documenting knowledge over time.
 
 ---
-
-[Start Reading](/chapters/)
