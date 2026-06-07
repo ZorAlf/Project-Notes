@@ -1,15 +1,11 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<h1>Chapters</h1>
 
-<div class="chapter-list">
-  <ul>
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
-</div>
+{{ range .Pages.ByWeight }}
+<p>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</p>
+{{ end }}
 
 {{ end }}
